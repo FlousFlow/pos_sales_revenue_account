@@ -69,5 +69,5 @@ income-only domain, discounts and multiple products.
 
 ## Compatibility
 
-Verified against Odoo 18 (Community Edition). Depends on `point_of_sale` and
+Verified against Odoo 19 (Community Edition). Depends on `point_of_sale` and
 `account`.

@@ -1,6 +1,6 @@
 {
     'name': 'POS Sales Revenue Account',
-    'version': '18.0.2.0.0',
+    'version': '19.0.1.0.0',
     'category': 'Sales/Point of Sale',
     'sequence': 10,
     'summary': 'Assign each Point of Sale its own optional Sales Revenue Account.',
@@ -48,7 +48,7 @@ Key features
 Compatibility
 =============
 
-Verified against Odoo 18 (Community Edition).
+Verified against Odoo 19 (Community Edition).
 """,
     'author': 'Flous Flow',
     'website': 'https://flousflow.com',
