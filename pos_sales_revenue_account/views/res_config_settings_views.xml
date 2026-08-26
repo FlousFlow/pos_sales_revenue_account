@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_res_config_settings_inherit_sales_revenue_account" model="ir.ui.view">
+        <field name="name">res.config.settings.inherit.sales.revenue.account</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="point_of_sale.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//setting[@id='pos_default_journals']" position="after">
+                <setting string="Default Sales Revenue Account"
+                         help="Default revenue account used for product sales from Point of Sale configurations that do not define their own Sales Revenue Account. Each Point of Sale can still define its own account. Leave empty to use product/category income accounts.">
+                    <field name="pos_default_sales_revenue_account_id" placeholder="Use product/category income accounts"/>
+                </setting>
+                <setting string="Sales Revenue Account"
+                         help="Revenue account used for product sales from the Point of Sale selected above. Overrides the company default and the product/category income account. Leave empty to use the default.">
+                    <field name="pos_sales_revenue_account_id" placeholder="Use the default / product-category account"/>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,109 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <img src="thumbnail.png" class="oe_picture oe_screenshot" width="100%"/>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <img src="banner.png" class="oe_picture oe_screenshot" width="100%"/>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan">Every Point of Sale, its own Sales Revenue Account</h2>
+        <div class="oe_span12">
+            <p class="oe_mt32">
+                Assign an optional <b>Sales Revenue Account</b> to each Point of Sale configuration.
+                When a sale is made and the session is closed, the product sales revenue is posted to
+                the account of that Point of Sale instead of the product / product-category income account.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan">Key Features</h2>
+        <div class="oe_span6">
+            <div class="oe_demo oe_picture oe_screenshot">
+                <ul>
+                    <li><b>Per-POS revenue account</b> — each Point of Sale can have its own income
+                        account (e.g. <i>411001 POS Sales Cairo</i>, <i>411002 POS Sales Giza</i>).</li>
+                    <li><b>Company default</b> — set a default account from the main Settings page;
+                        any Point of Sale without its own account uses it.</li>
+                    <li><b>Per-POS override</b> — the settings page also lets you pick a Point of Sale
+                        and assign its account directly (same pattern as Default Journals).</li>
+                </ul>
+            </div>
+        </div>
+        <div class="oe_span6">
+            <div class="oe_demo oe_picture oe_screenshot">
+                <ul>
+                    <li><b>Refunds</b> — POS refunds are reversed against the same POS-specific account.</li>
+                    <li><b>Income accounts only</b> — the selector only shows valid Income / Revenue
+                        accounts of the same company.</li>
+                    <li><b>Fallback preserved</b> — when no account is set, standard product /
+                        product-category income accounts are used, exactly as in vanilla Odoo.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan">Accounting behaviour</h2>
+        <div class="oe_span12">
+            <p class="oe_mt32">
+                Priority for the product sales revenue line of the POS closing entry:
+            </p>
+            <ol>
+                <li>POS-specific <i>Sales Revenue Account</i></li>
+                <li>Company default (from the main Settings page)</li>
+                <li>Product / product-category income account (standard Odoo)</li>
+            </ol>
+            <p>
+                Only the <b>revenue line</b> is affected. Tax accounts, receivable/payment accounts,
+                cash, bank, stock valuation, COGS, rounding and session-balance logic keep their
+                standard behaviour, so every generated move stays balanced.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan">Installation</h2>
+        <div class="oe_span12">
+            <ol>
+                <li>Copy the <code>pos_sales_revenue_account</code> folder into your addons path.</li>
+                <li>Restart Odoo and update the module list (Apps &rarr; Update Apps List).</li>
+                <li>Install the module (Apps &rarr; POS Sales Revenue Account).</li>
+            </ol>
+            <p>
+                <b>Configuration:</b> Settings &rarr; Point of Sale &rarr; <i>Default Sales Revenue
+                Account</i> (optional, company-wide), and/or Point of Sale &rarr; Configuration &rarr;
+                Point of Sale &rarr; open a POS &rarr; Accounting &rarr; <i>Sales Revenue Account</i>.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan">Compatibility &amp; Licence</h2>
+        <div class="oe_span12">
+            <p>
+                Compatible with Odoo 18 (Community Edition). Requires <code>point_of_sale</code> and
+                <code>account</code>.
+            </p>
+            <p>Licence: LGPL-3 &copy; Flous Flow</p>
+        </div>
+    </div>
+</section>

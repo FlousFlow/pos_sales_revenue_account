@@ -1,0 +1,87 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following module:
+#   * pos_sales_revenue_account
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-26 18:00+0000\n"
+"PO-Revision-Date: 2026-08-26 18:00+0000\n"
+"Last-Translator: Flous Flow\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+"Language: ar\n"
+
+#. module: pos_sales_revenue_account
+#: code:addons/pos_sales_revenue_account/__manifest__.py:0
+msgid "Assign each Point of Sale its own optional Sales Revenue Account."
+msgstr "تخصيص حساب إيراد مبيعات اختياري لكل نقطة بيع."
+
+#. module: pos_sales_revenue_account
+#: model:pos.config,field:sales_revenue_account_id
+#: model:res.config.settings,field:pos_sales_revenue_account_id
+#: model_terms:ir.ui.view,arch_db:pos_sales_revenue_account.view_res_config_settings_inherit_sales_revenue_account
+msgid "Sales Revenue Account"
+msgstr "حساب إيراد المبيعات"
+
+#. module: pos_sales_revenue_account
+#: model:pos.config,help:sales_revenue_account_id
+msgid "Revenue account used for product sales from this Point of Sale. Leave empty to use product/category income accounts."
+msgstr "حساب الإيراد المستخدم لمبيعات المنتجات من نقطة البيع هذه. اتركه فارغًا لاستخدام حسابات دخل المنتج/الفئة."
+
+#. module: pos_sales_revenue_account
+#: model:res.company,field:pos_default_sales_revenue_account_id
+#: model:res.config.settings,field:pos_default_sales_revenue_account_id
+#: model_terms:ir.ui.view,arch_db:pos_sales_revenue_account.view_res_config_settings_inherit_sales_revenue_account
+msgid "Default Sales Revenue Account"
+msgstr "حساب إيراد المبيعات الافتراضي"
+
+#. module: pos_sales_revenue_account
+#: model:res.company,field:pos_default_sales_revenue_account_id
+msgid "Default Sales Revenue Account (PoS)"
+msgstr "حساب إيراد المبيعات الافتراضي (نقطة البيع)"
+
+#. module: pos_sales_revenue_account
+#: model:res.company,help:pos_default_sales_revenue_account_id
+#: model_terms:ir.ui.view,arch_db:pos_sales_revenue_account.view_res_config_settings_inherit_sales_revenue_account
+msgid "Default revenue account used for product sales from Point of Sale configurations that do not define their own Sales Revenue Account. Leave empty to use product/category income accounts."
+msgstr "حساب الإيراد الافتراضي المستخدم لمبيعات المنتجات من نقاط البيع التي لا تحدد حساب إيراد خاصًا بها. اتركه فارغًا لاستخدام حسابات دخل المنتج/الفئة."
+
+#. module: pos_sales_revenue_account
+#: model:res.company,help:pos_default_sales_revenue_account_id
+msgid "Default revenue account used for product sales from Point of Sale configurations that do not define their own Sales Revenue Account. Each Point of Sale can still define its own account. Leave empty to use product/category income accounts."
+msgstr "حساب الإيراد الافتراضي المستخدم لمبيعات المنتجات من نقاط البيع التي لا تحدد حساب إيراد خاصًا بها. يمكن لكل نقطة بيع تحديد حسابها الخاص. اتركه فارغًا لاستخدام حسابات دخل المنتج/الفئة."
+
+#. module: pos_sales_revenue_account
+#: model_terms:ir.ui.view,arch_db:pos_sales_revenue_account.view_res_config_settings_inherit_sales_revenue_account
+msgid "Revenue account used for product sales from the Point of Sale selected above. Overrides the company default and the product/category income account. Leave empty to use the default."
+msgstr "حساب الإيراد المستخدم لمبيعات المنتجات من نقطة البيع المحددة أعلاه. يتجاوز الإعداد الافتراضي للشركة وحساب دخل المنتج/الفئة. اتركه فارغًا لاستخدام الافتراضي."
+
+#. module: pos_sales_revenue_account
+#: model_terms:ir.ui.view,arch_db:pos_sales_revenue_account.view_pos_config_form_inherit_sales_revenue_account
+msgid "Accounting"
+msgstr "المحاسبة"
+
+#. module: pos_sales_revenue_account
+#: model_terms:ir.ui.view,arch_db:pos_sales_revenue_account.view_pos_config_form_inherit_sales_revenue_account
+msgid "Sales Revenue Account overrides the standard product/category income account for sales generated from this Point of Sale. Leave empty to use standard Odoo behavior."
+msgstr "حساب إيراد المبيعات يتجاوز حساب دخل المنتج/الفئة القياسي لمبيعات نقطة البيع هذه. اتركه فارغًا لاستخدام سلوك أودو القياسي."
+
+#. module: pos_sales_revenue_account
+#: model_terms:ir.ui.view,arch_db:pos_sales_revenue_account.view_pos_config_form_inherit_sales_revenue_account
+msgid "Use product/category income accounts"
+msgstr "استخدم حسابات دخل المنتج/الفئة"
+
+#. module: pos_sales_revenue_account
+#: model_terms:ir.ui.view,arch_db:pos_sales_revenue_account.view_res_config_settings_inherit_sales_revenue_account
+msgid "Use the default / product-category account"
+msgstr "استخدم الافتراضي / حساب فئة المنتج"
+
+#. module: pos_sales_revenue_account
+#: code:addons/pos_sales_revenue_account/models/res_company.py:0
+msgid "The Default Sales Revenue Account (%(account)s) of the company '%(company)s' must belong to that company."
+msgstr "حساب إيراد المبيعات الافتراضي (%(account)s) الخاص بالشركة '%(company)s' يجب أن يتبع نفس الشركة."
